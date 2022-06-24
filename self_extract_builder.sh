@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SHELLSCRIPT=getCerts.sh
+SHELLSCRIPT="getCerts.sh"
 ZIPFILE="self_cert.gz"
 OUTFILE="selfExtract.sh"
 
