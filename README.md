@@ -5,7 +5,7 @@
 * [壓縮檔](self_cert.gz) * 1
   不限定格式，可視需求替換成其他類型檔案
 
-## [自解檔製作器](self_extract_builder.sh)
+## [自解檔製作器](builder.sh)
 運用sed做替換dd的skips大小
 ```bash
 #!/bin/bash
