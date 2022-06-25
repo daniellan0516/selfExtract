@@ -1,8 +1,5 @@
 #!/bin/bash
-
-# dd用的變數
-SKIPS=9999
-BYTES=1
+LINES=9999
 
 # 抓憑證資料
 filename='self_certs'
@@ -22,8 +19,8 @@ then
   echo "網路連線模式($url)"
   openssl s_client -connect $url --showcerts 2>/dev/null < /dev/null 1> $filename
 else
-   echo "自解模式"
-  dd if=$0 bs=$BYTES skip=$SKIPS of=$filename.gz 2>/dev/null
+  echo "自解模式"
+  tail --lines=$LINES $0 > $filename.gz
   gzip -d $filename.gz
 fi
 
