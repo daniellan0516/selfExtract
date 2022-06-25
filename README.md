@@ -1,9 +1,12 @@
 # 自解檔範例
 ## 準備
 * [ShellScirpt](getCerts.sh) * 1
+  
   為了避免執行完ShellScirpt後，執行到壓縮檔(出現錯誤訊息)，務必在ShellScirpt最後寫上exit
 * [原始檔](certs) * 1
+  
   任意類型的檔案(為了配合LINUX作業，所以這邊準備憑證的資料)
+
 ## 使用方法
 ```bash
   ./builder.sh certs
